@@ -1,0 +1,7 @@
+{
+  "DatabaseSettings": {
+    "DBProvider": "postgresql",
+    "ConnectionString": "Server=sureze.zapto.org;Port=5434;Database=boilerplate_db;User Id=postgres;Password=root123;timeout=600",
+    "ConnectionStringsql": "Data Source=(localdb)\\mssqllocaldb;Initial Catalog=fullStackHeroDb101;Integrated Security=True;MultipleActiveResultSets=True"
+  }
+}
