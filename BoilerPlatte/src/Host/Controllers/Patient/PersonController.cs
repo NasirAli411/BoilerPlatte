@@ -19,7 +19,7 @@ public class PersonController : BaseController
 
     [HttpPost("search")]
     [MustHavePermission(PermissionConstants.Persons.Search)]
-    [SwaggerOperation(Summary = "Search Brands using available Filters.")]
+    [SwaggerOperation(Summary = "Search Persons using available Filters.")]
     public async Task<IActionResult> SearchAsync(PersonListFilter filter)
     {
         var per = await _service.SearchAsync(filter);

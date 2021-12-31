@@ -26,5 +26,4 @@ public class UpdatePersonRequest : IMustBeValid
     public byte Image { get; set; }
     public string PatientMergeStatus { get; set; }
     public int PatientMergedWithPatientId { get; set; }
-    public string ShortCode { get; set; }
 }

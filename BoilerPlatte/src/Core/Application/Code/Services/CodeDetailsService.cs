@@ -29,7 +29,7 @@ public class CodeDetailsService : ICodeDetailsService
     {
         bool codeId = await _repository.ExistsAsync<CodeDetails>(a => a.CodeDetailId == request.CodeDetailId);
         if (codeId) throw new EntityAlreadyExistsException(string.Format(_localizer["CodeDetailId.alreadyexists"], request.CodeDetailId));
-        var codeDetails = new CodeDetails(request.CodeDetailId, request.Description, request.CodeValue1, request.CodeValue2, request.CodeValue3, request.Sequence, request.IsDefaultCode);
+        var codeDetails = new CodeDetails(request.Description, request.CodeValue1, request.CodeValue2, request.CodeValue3, request.Sequence, request.IsDefaultCode);
         codeDetails.DomainEvents.Add(new StatsChangedEvent());
         var newCodeDetails = await _repository.CreateAsync<CodeDetails>(codeDetails);
         await _repository.SaveChangesAsync();

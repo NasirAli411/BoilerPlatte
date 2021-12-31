@@ -14,9 +14,8 @@ public class CodeDetails : AuditableEntity, IMustHaveTenant
     public int Sequence { get; set; }
     public bool IsDefaultCode { get; set; }
     public string Tenant { get; set; }
-    public CodeDetails(string ID, string description, string codeValue1, string codeValue2, string codeValue3, int sequence, bool isDefaultCode)
+    public CodeDetails(string description, string codeValue1, string codeValue2, string codeValue3, int sequence, bool isDefaultCode)
     {
-        CodeDetailId = ID;
         Description = description;
         CodeValue1 = codeValue1;
         CodeValue2 = codeValue2;

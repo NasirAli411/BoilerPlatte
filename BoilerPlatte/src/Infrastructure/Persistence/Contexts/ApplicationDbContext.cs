@@ -32,6 +32,7 @@ public class ApplicationDbContext : BaseDbContext
     public DbSet<Person> Persons { get; set; }
     public DbSet<Codess> Codes { get; set; }
     public DbSet<CodeDetails> CodeDetails { get; set; }
+    public DbSet<Contact> Contacts { get; set; }
 
     public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
     {

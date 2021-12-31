@@ -59,11 +59,22 @@ public class PermissionConstants
     [Description("Persons Permissions")]
     public static class Persons
     {
-        public const string View = "Permissions.Products.View";
-        public const string Search = "Permissions.Products.Search";
-        public const string Register = "Permissions.Products.Register";
-        public const string Update = "Permissions.Products.Update";
-        public const string Remove = "Permissions.Products.Remove";
+        public const string View = "Permissions.Persons.View";
+        public const string Search = "Permissions.Persons.Search";
+        public const string Register = "Permissions.Persons.Register";
+        public const string Update = "Permissions.Persons.Update";
+        public const string Remove = "Permissions.Persons.Remove";
+    }
+
+    [DisplayName("Contacts")]
+    [Description("Contacts Permissions")]
+    public static class Contacts
+    {
+        public const string View = "Permissions.Contacts.View";
+        public const string Search = "Permissions.Contacts.Search";
+        public const string Register = "Permissions.Contacts.Register";
+        public const string Update = "Permissions.Contacts.Update";
+        public const string Remove = "Permissions.Contacts.Remove";
     }
 
     [DisplayName("Brands")]
